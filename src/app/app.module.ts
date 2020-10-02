@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OnlyForBrowserComponent } from './only-for-browser/only-for-browser.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OnlyForBrowserComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
